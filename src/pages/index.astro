@@ -1,0 +1,138 @@
+---
+import { TOURNAMENTS } from '../lib/config';
+import HomeSection from '../components/home-section.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='ManaGames'>
+  <main>
+    <section
+      class='h-96 bg-gradient-to-b from-transparent via-emerald-900/30 to-transparent mb-16'
+    >
+      <div class='flex flex-col gap-4 justify-center items-center h-full'>
+        <span
+          class='bg-emerald-500/40 border border-emerald-500 rounded-full px-2 py-1 text-sm text-emerald-50'
+          >TCG Shop für Turniere</span
+        >
+        <div class='flex flex-col text-center justify-center items-center'>
+          <h2 class='text-4xl lg:text-5xl xl:text-7xl font-medium'>
+            Organisation von <span class='highlight'>Turnieren </span>
+          </h2>
+          <h2 class='text-4xl lg:text-5xl xl:text-6xl font-medium'>
+             &
+          </h2>
+          <h2 class='text-4xl lg:text-5xl xl:text-7xl font-medium'>
+             An- und Verkauf von <span class='highlight'>TCG-Produkte</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class='px-8 pb-16 flex flex-col items-center'>
+      <HomeSection
+        src='./PB.jpeg'
+      >
+        <h2>Über Uns</h2>
+        <p>
+          "Trading Card Game is not a  Hobby, but a Lifestyle"<br />
+          <br />
+          Wir stehen zu 100% hinter diesem Zitat. 
+          Wir selbst sind leidenschaftliche Spieler/Sammler und möchten dieses wundervolle Hobby mit Weiteren teilen!
+          
+          Durch dieses Hobby haben wir mit jungen Jahren englisch gelernt und uns pragmatisches Denken angeeignet.
+          
+          Ob man spielt, sammelt oder investiert - alles macht Spaß und bringt viele Vorteile mit sich!
+          
+        </p>
+        Also stürzt Euch rein in diese Welt voller Wunder und genießt die wunderschöne Zeit mit Euren Freunden!
+
+        <p>
+          
+        </p>
+      </HomeSection>
+      <HomeSection
+        src='./MY.jpeg'
+        reverse
+      >
+        <h2>Tournament Schedule</h2>
+
+        <ul>
+          <li>Dienstag:</li>
+          <li>16:30 - Pokemon</li>
+          <li>17:00 - Lorcana</li>
+          <li>17:30 - Yu-Gi-Oh!</li>
+          <li>18:00 - Magic Standard</li>
+          <li>18:30 - One Piece</li>
+          <br />
+          <li>Mittwoch:</li>
+          <li>16:30 - Vanguard/Force of Will</li>
+          <li>17:00 - Battle Spirits/ Grand Archive</li>
+          <li>17:30 - Flesh & Blood (Blitz)</li>
+          <li>18:00 - Magic Legacy</li>
+          <li>18:30 Dragonball Super</li>
+          <br />
+          <li>Donnerstag:</li>
+          <li>16:30 - Lorcana</li>
+          <li>17:00 - Magic Highlander</li>
+          <li>17:30 - Yu-Gi-Oh!</li>
+          <li>18:00 - Yu-Gi-Oh! Time Wizard</li>
+          <li>18:30 - Dragonball Super</li>
+          <br />
+          <li>Freitag:</li>
+          <li>16:30 - Magic Pioneer</li>
+          <li>17:00 - Dragonball Super</li>
+          <li>17:30 - Digimon</li>
+          <li>18:00 - Final Fantasy/Shadowverse</li>
+          <li>18:30 - One Piece</li>
+          <li>19:00 - Flesh & Blood</li>
+          <li>19:30 - Magic Draft</li>
+          <br />
+          <li>Samstag:</li>
+          <li>13:00 - Pokemon</li>
+          <li>14:00 - One Piece</li>
+          <li>15:00 - Magic Modern</li>
+          <li>16:00 - Lorcana</li>
+          <li>17:00 - Yu-Gi-Oh!</li>
+          <li>18:00 - Dragonball Super</li>
+          <li>19:00 - Flesh & Blood</li>
+          <li>19:30 - Magic Draft</li>
+          
+        </ul>
+
+        <p>Anmeldung ist derzeit immer vor Ort.</p>
+      </HomeSection>
+      <HomeSection
+        src='https://managames.de/wp-content/uploads/2023/11/WhatsApp-Image-2023-10-31-at-17.03.126-1024x768.jpeg'
+      >
+        <h2>Sortiment</h2>
+        <p>
+          Mana Games - Home of all  Trading Card Games!<br />
+          <br />
+          Egal ob alt oder neu, ob Fantasy oder Anime, hier findest Du alle beliebten Tcgs.
+          
+          Sei es die neuen bzw. ongoing Games wie:
+          
+          Magic the Gathering, Yu-Gi-Oh!, Pokemon, Flesh & Blood, One Piece, Lorcana.
+          
+          Oder die alten bzw. eingestellten Games wie:
+           
+          Dragonball Z, Bleach, Naruto, Inu Yasha, Duel Masters, Huntik.
+          
+          Booster, Decks und Einzelkarten sind fast von jedem Tcg vorhanden und werden stetig restocked!<br />
+          <br />
+          
+          
+          Natürlich dürfen auch die Accessoires nicht fehlen!
+          
+          Hüllen, Boxen, Playmats, Würfel, Cases und Weiteres stehen in diversen Farben und Formen im Angebot!
+        </p>
+      </HomeSection>
+      <div class="mt-8 bg-gradient-to-r w-full from-transparent via-emerald-400 to-transparent h-2"></div>
+    </div>
+  </main>
+
+  <style>
+    .highlight {
+      @apply font-bold bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-600 text-transparent bg-clip-text inline-block;
+    }
+  </style>
+</Layout>
