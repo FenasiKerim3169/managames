@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://managames.de/sitemap-index.xml
