@@ -1,4 +1,4 @@
-export const SHOP_URL = 'https://shop.disney.com';
+export const SHOP_URL = 'https://shop.example.com';
 
 export const INSTAGRAM_URL = 'https://www.instagram.com/managamesberlin/';
 export const YOUTUBE_URL = 'https://www.youtube.com/channel/example';
